@@ -3,6 +3,7 @@
 font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Yeseva One', cursive;
+font-family: 'Gentium Book Basic', serif;
 
 */
 
@@ -26,7 +27,7 @@ body {
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
@@ -42,6 +43,448 @@ h1, h2, h3, h4, h5, h6 {
 
     margin: 0 auto;
 }
+
+/* Section */
+
+.section {
+    padding: 100px 0;
+    background: url('images/section/bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.section--menu {
+    background: url('images/menu/bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.section--reviews {
+    background: url('images/reviews/bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* Menu */
+
+.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.menu__col {
+    width: 455px;
+    margin-left: 100px;
+}
+
+.menu__col:last-child {
+    margin-right: 100px;
+    margin-left: 0;
+}
+
+.menu__card {
+    margin-bottom: 60px;
+}
+
+.menu__card:last-child {
+    margin-bottom: 0;
+}
+
+.card__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    color: #cc9900;
+
+    text-align: center;
+}
+
+.card__title:after {
+    content: url("images/menu/devider.png");
+
+    display: block;
+}
+
+.card__content {
+    list-style: none;
+    padding: 0;
+}
+
+.card__dish {
+    margin-top: 15px;
+
+    padding: 5px 10px 15px;
+
+    position: relative;
+}
+
+.card__dish--special:before {
+    content: "Special";
+
+    display: block;
+    width: 70px;
+    height: 21px;
+
+    text-align: center;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #f8fafa;
+
+    position: absolute;
+    top: -22px;
+    right: -1px;
+    z-index: 1;
+
+    background-color: rgba(204, 153, 0, .5);
+}
+
+.card__dish--special {
+    border: 1px solid rgba(200, 159, 45, .4);
+}
+
+.dish__header {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-family: 'Yeseva One', cursive;
+    font-size: 21px;
+    color: #c89f2d;
+
+
+    padding: 5px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(200, 159, 45, .4);
+}
+
+.dish__title {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.dish__price {
+
+}
+
+.dish__text {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #4c4c4c;
+}
+
+/* Reviews */
+
+.reviews {
+    width: 100%;
+    max-width: 770px;
+    height: 100%;
+    min-height: 557px;
+    padding: 80px 70px 100px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 1;
+}
+
+.reviews__mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.reviews__mask img {
+    display: block;
+    opacity: .2;
+
+    width: 100%;
+}
+
+.reviews__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    font-weight: 400;
+
+    margin-bottom: 5px;
+}
+
+.reviews__title:after {
+    content: url("images/reviews/devider.png");
+
+    display: block;
+}
+
+.reviews__quotes {
+    position: absolute;
+    top: 26%;
+    left: 4%;
+    z-index: 1;
+
+    font-family: 'Georgia', serif;
+    font-size: 96px;
+    color: #979997;
+
+}
+
+.reviews__text {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #dde0df;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+.reviews__author {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.reviews__author:hover {
+    text-decoration: underline;
+}
+
+/* Reservation */
+
+.reservation {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 40px;
+
+}
+
+.reservation__images {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 570px;
+}
+
+.reservation__img {
+    width: 270px;
+    height: auto;
+}
+
+.reservation__content {
+    width: 100%;
+    max-width: 570px;
+    padding: 0 70px;
+
+    text-align: center;
+}
+
+.reservation__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    color: #cc9900;
+
+    margin-bottom: 20px;
+}
+
+.reservation__title:after {
+    content: url("images/reservation/devider.png");
+
+    display: block;
+    margin-top: 5px;
+}
+
+.reservation__text {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #4c4c4c;
+
+    line-height: 1.5;
+
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.reservation__text--last {
+    margin-bottom: 40px;
+}
+
+.reservation__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.reservation__form__item {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+.reservation__label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #c9a131;
+
+    margin-bottom: 5px;
+}
+
+.reservation__input {
+    width: 200px;
+    padding: 9px 15px;
+    margin-bottom: 25px;
+
+    border: 1px solid #c8c6c6;
+    border-radius: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #7c7c7c;
+}
+
+.reservation__input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #7c7c7c;
+}
+
+.reservation__icon {
+    font-size: 15px;
+    color: #b4b4b4;
+
+    position: absolute;
+    top: 128px;
+    left: 175px;
+    z-index: 1;
+
+    cursor: pointer;
+}
+
+.reservation__icon--arrow {
+    font-size: 12px;
+    top: 132px;
+    left: 405px;
+}
+
+.reservation__btn {
+    min-width: 200px;
+    padding: 7px 65px;
+/*    margin-bottom: 25px;*/
+    margin: 10px auto 0;
+
+    background-color: #c9a131;
+    border: none;
+    border-radius: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+
+    cursor: pointer;
+
+    transition: background-color .1s linear;
+}
+
+.reservation__btn:hover {
+    background-color: #bc8a00;
+}
+
+.reservation__input:focus, .reservation__btn:focus {
+    outline: none;
+
+    border: 1px solid #c89f2d;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #191919;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 50px 40px 60px;
+}
+
+.footer__card {
+    width: 370px;
+
+    text-align: center;
+}
+
+.footer__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 21px;
+    font-weight: 400;
+    color: #fefefe;
+}
+
+.footer__title:after {
+    content: url("images/footer/devider.png");
+
+    display: block;
+    margin: 15px 0 15px;
+}
+
+.footer__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer__address {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+}
+
+.footer__icons {
+    font-size: 16px;
+    color: #fff;
+
+    margin-top: 45px;
+}
+
+.footer__link {
+    margin-right: 10px;
+
+    color: #fff;
+
+    transition: transform .1s linear;
+}
+
+.footer__link:hover{
+    transform: scale(1.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
