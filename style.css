@@ -415,16 +415,24 @@ input[type="date"]:valid::before {
     cursor: pointer;
 }
 
-/* Input Tel */
+/* Input Count */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 .reservation__arrow-icon {
     position: absolute;
     top: 40px;
     left: 175px;
-    z-index: 1;
+    z-index: 0;
 
     cursor: pointer;
 }
+
+
 
 .reservation__btn {
     min-width: 200px;
