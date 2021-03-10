@@ -20,6 +20,7 @@ font-family: 'Gentium Book Basic', serif;
 
 */
 
+
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -45,6 +46,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Section */
+/* ================================== */
 
 .section {
     padding: 100px 0;
@@ -55,6 +57,8 @@ h1, h2, h3, h4, h5, h6, p {
 .section--menu {
     background: url('images/menu/bg.jpg') no-repeat center;
     background-size: cover;
+
+    padding: 100px 0 70px;
 }
 
 .section--reviews {
@@ -63,6 +67,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Menu */
+/* ================================== */
 
 .menu {
     display: flex;
@@ -81,7 +86,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .menu__card {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
 
 .menu__card:last-child {
@@ -173,6 +178,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Reviews */
+/* ================================== */
 
 .reviews {
     width: 100%;
@@ -253,6 +259,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Reservation */
+/* ================================== */
 
 .reservation {
     display: flex;
@@ -318,8 +325,6 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    position: relative;
 }
 
 .reservation__form__item {
@@ -327,6 +332,8 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: column;
 
     text-align: left;
+
+    position: relative;
 }
 
 .reservation__label {
@@ -335,14 +342,15 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 700;
     color: #c9a131;
 
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
-.reservation__input {
+.reservation__input, input[type="date" i] {
     width: 200px;
-    padding: 9px 15px;
+    padding: 6px 10px 6px 15px;
     margin-bottom: 25px;
 
+    background: rgba(255, 255, 255, .4);
     border: 1px solid #c8c6c6;
     border-radius: 0;
 
@@ -350,31 +358,72 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 16px;
     font-style: italic;
     color: #7c7c7c;
+
+    cursor: text;
 }
 
 .reservation__input::placeholder {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-style: italic;
-    color: #7c7c7c;
 }
 
-.reservation__icon {
-    font-size: 15px;
-    color: #b4b4b4;
+/* Input Date */
+
+/* Change default icons in input */
+::-webkit-calendar-picker-indicator {
+    width: 10px;
+    height: 10px;
+
+    cursor: pointer;
+
+    opacity: 0;
 
     position: absolute;
-    top: 128px;
+    top: 35px;
+    left: 150px;
+    z-index: 2;
+}
+
+/* Add placeholder(text) */
+input[type="date"]::before {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #7c7c7c;
+
+    content: attr(placeholder);
+
+    width: 100%;
+}
+
+/* Hide default placeholder */
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+    display: none;
+}
+
+.reservation__date-icon {
+    position: absolute;
+    top: 35px;
     left: 175px;
-    z-index: 1;
+    z-index: 0;
+
+    width: 13px;
+    height: 13px;
 
     cursor: pointer;
 }
 
-.reservation__icon--arrow {
-    font-size: 12px;
-    top: 132px;
-    left: 405px;
+/* Input Tel */
+
+.reservation__arrow-icon {
+    position: absolute;
+    top: 40px;
+    left: 175px;
+    z-index: 1;
+
+    cursor: pointer;
 }
 
 .reservation__btn {
@@ -408,6 +457,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Footer */
+/* ================================== */
 
 .footer {
     background-color: #191919;
@@ -463,8 +513,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer__link {
-    margin-right: 10px;
-
+    margin: 0 5px;
     color: #fff;
 
     transition: transform .1s linear;

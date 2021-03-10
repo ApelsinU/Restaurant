@@ -176,25 +176,31 @@
                 <form class="reservation__form" action="/" method="post">
                     <div class="reservation__form__item">
                         <label class="reservation__label" for="u-name">Name</label>
-                        <input class="reservation__input" type="text" name="username" id="u-name" placeholder="your name *">
+                        <input class="reservation__input" type="text" name="username" id="u-name" placeholder="your name *" required>
                     </div>
 
                     <div class="reservation__form__item">
-                        <label class="reservation__label" for="mail">Name</label>
-                        <input class="reservation__input" type="email" name="email"  id="mail" placeholder="your email *">
+                        <label class="reservation__label" for="mail">Mail</label>
+                        <input class="reservation__input" type="email" name="email"  id="mail" placeholder="your email *" required>
                     </div>
 
                     <div class="reservation__form__item">
                         <label class="reservation__label" for="date">Date</label>
-                        <input class="reservation__input" type="text"  name="date" id="date" placeholder="date *">
+                        <input class="reservation__input" type="date"  name="date" id="date" placeholder="date *" required>
+                        <img class="reservation__date-icon" src="images/reservation/icon-calendar.png">
                     </div>
-                    <i class="reservation__icon fas fa-calendar-alt"></i>
+<!--                    <i class="reservation__icon fas fa-calendar-alt"></i>-->
 
                     <div class="reservation__form__item">
                         <label class="reservation__label" for="tel">Party number</label>
-                        <input class="reservation__input" type="tel" name="tel"  id="tel" placeholder="party number *">
+                        <input class="reservation__input" list="tel-list" type="tel" name="tel"  id="tel" placeholder="party number *" required pattern="^[ 0-9]+$">
+                        <datalist id="tel-list">
+                            <option value="121648975489">
+                        </datalist>
+                        <img class="reservation__arrow-icon" src="images/reservation/icon-arrow.png">
+
                     </div>
-                    <i class="reservation__icon reservation__icon--arrow fas fa-chevron-down"></i>
+
 
                     <button class="reservation__btn" type="submit">Book now!</button>
                 </form>
@@ -234,9 +240,9 @@
                     <p>128 Meserole Avenue</p>
                 </address>
                 <div class="footer__icons">
-                    <a href="#"><i class="footer__link fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="footer__link fab fa-youtube"></i></a>
-                    <a href="#"><i class="footer__link fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="footer__link fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="footer__link fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/?lang=ru" target="_blank"><i class="footer__link fab fa-twitter"></i></a>
                     <a href="#"><i class="footer__link fas fa-poll"></i></a>
                 </div>
             </div>
