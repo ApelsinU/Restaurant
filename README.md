@@ -6,4 +6,4 @@ Pixel perfect вёрстка.
 Вариант 1 https://www.dropbox.com/s/xvhx2kxlvzxu5n0/Restaurant_2.psd?dl=0
 
 
- - Site is published at https://apelsinu.github.io/Restaurant/
+Site is published at https://apelsinu.github.io/Restaurant/
