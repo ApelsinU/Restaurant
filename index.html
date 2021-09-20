@@ -16,12 +16,81 @@
 <body>
 
 <!-- Header -->
+<section class="section section--promo">
+    <header>
+        <div class="header">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="#"><p>LAMBDA</p></a>
+                </div>
+                <nav class="header__nav">
+                    <a class="header__nav__link" href="#">Home</a>
+                    <a class="header__nav__link" href="#">About</a>
+                    <a class="header__nav__link" href="#">Igredients</a>
+                    <a class="header__nav__link" href="#">Menu</a>
+                    <a class="header__nav__link" href="#">Reviews</a>
+                    <a class="header__nav__link" href="#">Reservations</a>
+                    <div class="header__social">
+                        <a href="https://twitter.com/?lang=ru" target="_blank"><i class="header__link fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="header__link fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="header__link fab fa-facebook-f"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
 
 <!-- Promo -->
 
-<!-- About -->
+    <div class="container">
+        <div class="promo">
+            <h1>the right ingredients for the right food</h1>
+            <img src="images/promo/Decoration-2.png" alt="">
+            <div class="buttons">
+                <button class="promo__button">Book table</button>
+                <button class="promo__button">See the menu</button>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-- Ingredients -->
+<!-- About -->
+<section class="section--about">
+    <div class="container">
+        <div class="about">
+            <div class="about__text">
+                <h2 class="about__title">Just the right food</h2>
+                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our
+                    customers coming back for more. Perfect materials and freshly baked food, delicious
+                    Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today
+                    and check us out!</p>
+                <img class="about__img" src="images/about/cook.png" alt="">
+            </div>
+            <img class="about__dish" src="images/about/dish.png" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- Ingredient -->
+<section class="section--ingredient">
+    <div class="container">
+        <div class="ingredients">
+        <div class="ingredients__text">
+            <h2 class="ingredients__title">Fine ingredients</h2>
+            <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our
+                customers coming back for more. Perfect materials and freshly baked food, delicious
+                Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today
+                and check us out!</p>
+            <div class="ingredients__imgs">
+                <img src="images/ingredients/1.png" alt="">
+                <img src="images/ingredients/2.png" alt="">
+                <img src="images/ingredients/3.png" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- Menu -->
 <section class="section section--menu">
@@ -137,8 +206,6 @@
                     </ul>
                 </div>
             </div> <!-- /.menu__col -->
-
-
         </div> <!-- /.menu -->
     </div> <!-- /.container -->
 </section>
@@ -155,7 +222,6 @@
             <div class="reviews__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</div>
             <a class="reviews__author" href="#"><span>- food inc, New York</span></a>
         </div>
-
     </div>
 </section>
 
@@ -164,6 +230,7 @@
     <div class="container">
         <div class="reservation">
             <div class="reservation__images">
+                reservation__mask
                 <img class="reservation__img" src="images/reservation/1.jpg" alt="" >
                 <img class="reservation__img" src="images/reservation/2.jpg" alt="" >
             </div>
@@ -227,10 +294,14 @@
             </div>
             <div class="footer__card">
                 <h3 class="footer__title">Opening Hours</h3>
-                <p class="footer__text">
-                    <b>Mon-Thu:</b> 7:00am-8:00pm <br>
-                    <b>Fri-Sun:</b> 7:00am-10:00pm
-                </p>
+                <div class="footer__text">
+                    <div class="footer__text__line">
+                        <span class="footer__text--bold">Mon-Thu:</span><span class="footer__text"> 7:00am-8:00pm</span>
+                    </div>
+                    <div>
+                        <span class="footer__text--bold">Fri-Sun:</span><span class="footer__text">7:00am-10:00pm</span>
+                    </div>
+                </div>
                 <div class="footer__icons">
                     <a href="#"><i class="footer__link fab fa-cc-amex"></i></a>
                     <a href="#"><i class="footer__link fab fa-cc-paypal"></i></a>
