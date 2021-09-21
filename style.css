@@ -40,9 +40,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 .container {
     width: 100%;
-    max-width: 1250px;
+    max-width: 1300px;
+    height: 100%;
 
     margin: 0 auto;
+    padding: 0 25px;
 }
 
 /* Section */
@@ -66,181 +68,161 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .section--promo {
-    background: url("images/promo/bg.png") no-repeat center;
+    background: url('images/promo/bg.png') no-repeat center;
     background-size: cover;
-    height: 750px;
+
+    height: 100vh; /* 1600x750px */
+    padding: 0;
 }
-
-/*.bg {
-    background-image: url(/images/promo/"bg.png");
-    position: absolute;
-    left: 7px;
-    top: 0px;
-    width: 1600px;
-    height: 159px;
-    z-index: 284;
-}*/
-
-/*.section--header {
-    background: url("images/header/bg.png");
-    background-size: cover;
-}*/
 
 .section--about {
-    background: url('images/section/bg.jpg') no-repeat center;
-    background-size: cover;
-    height: 710px;
+    padding: 60px 0 40px;
 }
 
-.section--ingredient {
+.section--ingredients {
     background: url('images/ingredients/bg.png') no-repeat center;
     background-size: cover;
-    height: 758px;
-}
-
-/* Header */
-/* ================================== */
-
-.header {
-    width: 100%;
-
-    padding: 0 200px 0 180px;
-    height: 110px;
-
-    background: linear-gradient(rgba(0,0,0,.7), rgba(255,255,255,0));
-}
-
-.header__inner {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header__logo {
-    display: block;
-
-    font-size: 36px;
-    font-family: 'Yeseva One', cursive;
-    margin-top: -7px;
-    padding-top: 47px;
-}
-
-.header__logo a{
-    text-decoration: none;
-    color: white;
-}
-
-.header__nav{
-    display: flex;
-    font-size: 21px;
-    font-weight: bold;
-    margin-right: 40px;
-}
-
-.header__nav__link{
-    color: white;
-    text-decoration: none;
-    font-family: "GentiumBookBasic", serif;
-    margin-left: 24px;
-    padding-top: 52px;
-    padding-left: 13px;
-    padding-right: 13px;
-}
-
-.header__nav__link:hover{
-    border-top: 3px solid rgba(255, 255, 255, 0.7);
-    padding-top: 49px;
-}
-
-.header__nav__link:first-child{
-    margin-left: 0;
-}
-
-.header__social{
-    margin-left: 20px;
-    padding-top: 53px;
-    font-size: 21px;
-}
-
-.header__link {
-    padding-left: 18px;
-    color: rgb(218, 179, 62);
-    transition: transform .1s linear;
-}
-
-.header__link:first-child{
-    margin-left: 0;
-}
-
-.header__link:hover{
-    transform: scale(1.1);
 }
 
 /* Promo */
 /* ================================== */
 
-.promo h1{
-    width: 1160px;
-    padding: 130px 0 30px 100px;
+.header {
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background: linear-gradient(rgba(0,0,0,.8), rgba(255,255,255,0));
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.logo__image {
+    display: block;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+.nav__link {
+    display: block;
+    margin: 0 12px;
+    padding: 45px 12px;
+
+    border-top: 3px solid transparent;
+
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff;
+
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    border-color: #c8c5bc;
+    
+    transition: border-color .1s linear;
+}
+
+.social-links {
+    font-size: 21px;
+    color: #dab33e;
+
+    margin-top: 5px;
+}
+
+.social-links__icon {
+    padding: 0 7px;
+    color: #dab33e;
+}
+
+.social-links__icon:hover {
+    color: #ffbf00;
+    transform: scale(1.1);
+
+    transition: color .1s linear, transform .1s linear;
+}
+
+.promo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    padding-top: 70px;
+    /*transform: translateY(-70px);*/
+}
+
+.promo__inner {
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+
+    text-align: center;
+}
+
+.promo__title {
     font-family: 'Yeseva One', cursive;
+    font-weight: 400px;
     font-size: 90px;
-    color: rgba(255, 255, 255, 0.922);
-    line-height: 1.2;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(1, 1, 1, 0.64);
+    color: #fff;
+
+    line-height: 1.4;
 }
 
-.promo img{
-    width: 235px;
-    text-align: center;
-    margin-left: 510px;
-    margin-right: 510px;
+.promo__devider {
+    margin: 30px 0;
 }
 
-.promo__button{
-    margin-top: 35px;
-    height: 56px;
-    width: 230px;
-    font-family: "Lato", serif;
+
+.promo__btn {
+    margin: 0 15px;
+    padding: 16px 50px;
+
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
+    color: #fff;
     text-transform: uppercase;
-    background: rgba(0, 0, 0, 0.4);
-    border: #191919 solid 1px ;
-    color: white;
-    cursor: pointer;
 
-    transition: background .2s linear;
+    background-color: rgba(0,0,0,.5);
+    border: 1px solid #000;
+
+    cursor:pointer;
 }
 
-.promo__button:first-child{
-    margin-right: 30px;
-}
+.promo__btn:hover {
+    background-color: rgba(255, 255, 255, .3);
+    border-color: #fff;
 
-.promo__button:hover{
-    background: rgba(255, 255, 255, 0.4);
-    border: white solid 2px;
-}
-
-.buttons{
-    margin-left: 380px;
+    transition: background-color, .2s linear, border-color .2s linear;
 }
 
 /* About */
 /* ================================== */
 
-.about{
+.about {
     display: flex;
+    justify-content: space-around;
 }
 
-.about__text{
-    margin-top: 107px;
-    margin-left: 120px;
-    width: 415px;
-    height: 500px;
-    font-family: "Lato", serif;
-    font-size: 16px;
+.about__content {
     text-align: center;
-    color: #191919;
-    line-height: 1.5;
+
+    width: 100%;
+    max-width: 440px;
+    margin: auto 0;
 }
 
 .about__title {
@@ -248,73 +230,106 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 36px;
     font-weight: 400;
     color: #cc9900;
-    text-align: center;
 }
 
-.about__title:after {
-    content: url("images/menu/devider.png");
-    display: block;
+.about__text {
+    font-size: 16px;
+    color: #4c4c4c;
+
+    line-height: 1.5;
+
+    margin-bottom: 50px;
 }
 
-.about__img{
-    margin-top: 50px;
-    padding-left: 80px;
+.about__devider {
+    margin: 15px 0 25px;
 }
 
-.about__dish{
-    margin-top: 40px;
-    margin-left: 13px;
+.about__author {
+    margin-left: 80px;
 }
 
 /* Ingredients */
 /* ================================== */
 
-.ingredients{
-    display: flex;
+.ingredients {
+    width: 100%;
+    max-width: 570px;
+    margin: 0 0 0 auto;
+    padding: 130px 80px 70px;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 1;
 }
 
-.ingredients__text{
-    width: 570px;
-    margin-top: 100px;
-    padding-top: 83px;
-    margin-left: 640px;
-    font-family: "Lato", serif;
-    font-size: 16px;
-    text-align: center;
-    color: white;
-    line-height: 1.5;
-    background: rgba(0, 0, 0, 0.67);
-    padding-left: 81px;
-    padding-right: 81px;
+.ingredients__mask {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .ingredients__title {
     font-family: 'Yeseva One', cursive;
     font-size: 36px;
     font-weight: 400;
-    color: white;
-    text-align: center;
+
+    color: #fff;
 }
 
-.ingredients__title:after {
-    content: url("images/ingredients/Decoration.png");
-    display: block;
+.ingredients__devider {
+    margin: 15px 0 25px;
 }
 
-.ingredients__imgs{
-    margin-top: 70px;
-    margin-bottom: 79px;
-
+.ingredients__text {
+    line-height: 1.5;
 }
 
-.ingredients__imgs img{
-    margin-left: 30px;
-    padding: 0 0 0 0;
+.ingredients__photos {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 65px;
 }
 
-.ingredients__imgs img:first-child{
-    margin-left: 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Menu */
 /* ================================== */
@@ -353,7 +368,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .card__title:after {
-    content: url("images/menu/devider.png");
+    content: url("images/section/r-devider.png");
 
     display: block;
 }
@@ -417,10 +432,6 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 400;
 }
 
-.dish__price {
-
-}
-
 .dish__text {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -455,7 +466,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .reviews__mask img {
     display: block;
-    opacity: .2;
+    opacity: .3;
 
     width: 100%;
 }
@@ -469,7 +480,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .reviews__title:after {
-    content: url("images/reviews/devider.png");
+    content: url("images/section/w-devider.png");
 
     display: block;
 }
@@ -548,7 +559,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .reservation__title:after {
-    content: url("images/reservation/devider.png");
+    content: url("images/section/r-devider.png");
 
     display: block;
     margin-top: 5px;
@@ -680,16 +691,13 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-
-
 .reservation__btn {
     min-width: 200px;
     padding: 7px 65px;
-/*    margin-bottom: 25px;*/
     margin: 10px auto 0;
 
     background-color: #c9a131;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 0;
 
     font-family: 'Open Sans', sans-serif;
@@ -740,7 +748,7 @@ input::-webkit-inner-spin-button {
 }
 
 .footer__title:after {
-    content: url("images/footer/devider.png");
+    content: url("images/section/w-devider-sm.png");
 
     display: block;
     margin: 15px 0 15px;

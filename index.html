@@ -15,82 +15,93 @@
 
 <body>
 
-<!-- Header -->
+<!-- Promo -->
 <section class="section section--promo">
-    <header>
-        <div class="header">
+      
+    <header class="header">
+        <div class="container">
             <div class="header__inner">
-                <div class="header__logo">
-                    <a href="#"><p>LAMBDA</p></a>
+                <div class="logo">
+                    <img class="logo__image" src="./images/promo/logo.png" alt="">
                 </div>
-                <nav class="header__nav">
-                    <a class="header__nav__link" href="#">Home</a>
-                    <a class="header__nav__link" href="#">About</a>
-                    <a class="header__nav__link" href="#">Igredients</a>
-                    <a class="header__nav__link" href="#">Menu</a>
-                    <a class="header__nav__link" href="#">Reviews</a>
-                    <a class="header__nav__link" href="#">Reservations</a>
-                    <div class="header__social">
-                        <a href="https://twitter.com/?lang=ru" target="_blank"><i class="header__link fab fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/" target="_blank"><i class="header__link fab fa-youtube"></i></a>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="header__link fab fa-facebook-f"></i></a>
+                <nav class="nav">
+                    <a href="#" class="nav__link">Home</a>
+                    <a href="#" class="nav__link">About</a>
+                    <a href="#" class="nav__link">Igredients</a>
+                    <a href="#" class="nav__link">Menu</a>
+                    <a href="#" class="nav__link">Reviews</a>
+                    <a href="#" class="nav__link">Reservations</a>
+    
+                    <div class="social-links">
+                        <a href="https://twitter.com/?lang=ru" target="_blank"><i class="social-links__icon fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="social-links__icon fab fa-youtube"></i></a>
+                        <a href="https://ru-ru.facebook.com/" target="_blank"><i class="social-links__icon fab fa-facebook-f"></i></a>   
                     </div>
                 </nav>
             </div>
-        </div>
+        </div> 
     </header>
-
-<!-- Promo -->
 
     <div class="container">
         <div class="promo">
-            <h1>the right ingredients for the right food</h1>
-            <img src="images/promo/Decoration-2.png" alt="">
-            <div class="buttons">
-                <button class="promo__button">Book table</button>
-                <button class="promo__button">See the menu</button>
+            <div class="promo__inner">
+                <h1 class="promo__title">the right ingredients for the right food</h1>
+                <img class="promo__devider" src="./images/section/w-devider-lg.png" alt="">
+                <div class="promo__buttons">
+                    <button class="promo__btn">BOOK A TABLE</button>
+                    <button class="promo__btn">SEE THE MENU</button>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- About -->
-<section class="section--about">
+<section class="section section--about">
     <div class="container">
         <div class="about">
-            <div class="about__text">
-                <h2 class="about__title">Just the right food</h2>
-                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our
-                    customers coming back for more. Perfect materials and freshly baked food, delicious
-                    Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today
-                    and check us out!</p>
-                <img class="about__img" src="images/about/cook.png" alt="">
+            <div class="about__content">
+                <h1 class="about__title">Just the right food</h1>
+                <img class="about__devider" src="./images/menu/devider.png" alt="">
+                <p class="about__text">
+                    If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps
+                    our customers coming back for more. Perfect materials and freshly baked food,
+                    delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist!
+                    Stop in today and check us out!
+                </p>
+                <img class="about__author" src="./images/about/cook.png" alt="cook" >
             </div>
-            <img class="about__dish" src="images/about/dish.png" alt="">
+            <div class="about__photo">
+                <img src="./images/about/dish.png" alt="dish">
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Ingredient -->
-<section class="section--ingredient">
+
+<!-- Ingredients -->
+
+<section class="section section--ingredients">
     <div class="container">
         <div class="ingredients">
-        <div class="ingredients__text">
-            <h2 class="ingredients__title">Fine ingredients</h2>
-            <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our
-                customers coming back for more. Perfect materials and freshly baked food, delicious
-                Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today
-                and check us out!</p>
-            <div class="ingredients__imgs">
-                <img src="images/ingredients/1.png" alt="">
-                <img src="images/ingredients/2.png" alt="">
-                <img src="images/ingredients/3.png" alt="">
+            <div class="ingredients__mask">
+                <img src="./images/ingredients/mask.png" alt="">
             </div>
-        </div>
+            <h1 class="ingredients__title">Fine ingredients</h1>
+            <img class="ingredients__devider" src="./images/section/w-devider.png" alt="">
+            <p class="ingredients__text">
+                If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers
+                coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,
+                muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+            </p>
+            <div class="ingredients__photos">
+                <img src="./images/ingredients/1.png" alt="1-st ingredient">
+                <img src="./images/ingredients/2.png" alt="2-st ingredient">
+                <img src="./images/ingredients/3.png" alt="3-st ingredient">
+            </div>
         </div>
     </div>
 </section>
-
 
 <!-- Menu -->
 <section class="section section--menu">
@@ -230,7 +241,6 @@
     <div class="container">
         <div class="reservation">
             <div class="reservation__images">
-                reservation__mask
                 <img class="reservation__img" src="images/reservation/1.jpg" alt="" >
                 <img class="reservation__img" src="images/reservation/2.jpg" alt="" >
             </div>
