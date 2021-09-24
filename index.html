@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="style.css">
 
     <!-- Fonts -->
@@ -10,13 +11,12 @@
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/af9d2d7781.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
 
 <!-- Promo -->
-<section class="section section--promo">
+<section class="section section--promo" id="home">
       
     <header class="header">
         <div class="container">
@@ -25,18 +25,29 @@
                     <img class="logo__image" src="./images/promo/logo.png" alt="">
                 </div>
                 <nav class="nav">
-                    <a href="#" class="nav__link">Home</a>
-                    <a href="#" class="nav__link">About</a>
-                    <a href="#" class="nav__link">Igredients</a>
-                    <a href="#" class="nav__link">Menu</a>
-                    <a href="#" class="nav__link">Reviews</a>
-                    <a href="#" class="nav__link">Reservations</a>
+                    <a href="#home" class="nav__link">Home</a>
+                    <a href="#about" class="nav__link">About</a>
+                    <a href="#ingredients" class="nav__link">Igredients</a>
+                    <a href="#menu" class="nav__link">Menu</a>
+                    <a href="#reviews" class="nav__link">Reviews</a>
+                    <a href="#reservation" class="nav__link">Reservations</a>
     
                     <div class="social-links">
                         <a href="https://twitter.com/?lang=ru" target="_blank"><i class="social-links__icon fab fa-twitter"></i></a>
                         <a href="https://www.youtube.com/" target="_blank"><i class="social-links__icon fab fa-youtube"></i></a>
                         <a href="https://ru-ru.facebook.com/" target="_blank"><i class="social-links__icon fab fa-facebook-f"></i></a>   
                     </div>
+                </nav>
+                <div class="burger-menu">
+                    <span class="burger-menu__item"></span>
+                </div>
+                <nav class="burger-nav">
+                    <a href="#home" class="burger-nav__link">Home</a>
+                    <a href="#about" class="burger-nav__link">About</a>
+                    <a href="#ingredients" class="burger-nav__link">Igredients</a>
+                    <a href="#menu" class="burger-nav__link">Menu</a>
+                    <a href="#reviews" class="burger-nav__link">Reviews</a>
+                    <a href="#reservation" class="burger-nav__link">Reservations</a>
                 </nav>
             </div>
         </div> 
@@ -48,21 +59,25 @@
                 <h1 class="promo__title">the right ingredients for the right food</h1>
                 <img class="promo__devider" src="./images/section/w-devider-lg.png" alt="">
                 <div class="promo__buttons">
-                    <button class="promo__btn">BOOK A TABLE</button>
-                    <button class="promo__btn">SEE THE MENU</button>
+                    <div class="promo__btn"><a href="#reservation" class="promo__link">BOOK A TABLE</a></div>
+                    <div class="promo__btn"><a href="#menu" class="promo__link">SEE THE MENU</a></div>
                 </div>
             </div>
         </div>
     </div>
+
+    <a href="#home" class="home__arrow">
+        <i class="home__arrow__icon fas fa-arrow-up"></i>
+    </a>
 </section>
 
 <!-- About -->
-<section class="section section--about">
+<section class="section section--about" id="about">
     <div class="container">
         <div class="about">
             <div class="about__content">
                 <h1 class="about__title">Just the right food</h1>
-                <img class="about__devider" src="./images/menu/devider.png" alt="">
+                <img class="about__devider" src="./images/section/r-devider.png" alt="">
                 <p class="about__text">
                     If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps
                     our customers coming back for more. Perfect materials and freshly baked food,
@@ -78,15 +93,10 @@
     </div>
 </section>
 
-
 <!-- Ingredients -->
-
-<section class="section section--ingredients">
+<section class="section section--ingredients" id="ingredients">
     <div class="container">
         <div class="ingredients">
-            <div class="ingredients__mask">
-                <img src="./images/ingredients/mask.png" alt="">
-            </div>
             <h1 class="ingredients__title">Fine ingredients</h1>
             <img class="ingredients__devider" src="./images/section/w-devider.png" alt="">
             <p class="ingredients__text">
@@ -104,10 +114,9 @@
 </section>
 
 <!-- Menu -->
-<section class="section section--menu">
+<section class="section section--menu" id="menu">
     <div class="container">
         <div class="menu">
-
             <div class="menu__col">
                 <div class="menu__card">
                     <h2 class="card__title">Appetisers</h2>
@@ -124,7 +133,7 @@
                                 <h2 class="dish__title">Aubergine Salad </h2>
                                 <p class="dish__price">$5.50</p>
                             </div>
-                            <p class="dish__text">.Pureed eggplant, garlic, green pepper and tomato dip.</p>
+                            <p class="dish__text">Pureed eggplant, garlic, green pepper and tomato dip.</p>
                         </li>
                         <li class="card__dish">
                             <div class="dish__header">
@@ -222,12 +231,9 @@
 </section>
 
 <!-- Reviews -->
-<section class="section section--reviews">
+<section class="section section--reviews" id="reviews">
     <div class="container">
         <div class="reviews">
-            <div class="reviews__mask">
-                <img src="images/reviews/content-bg.jpg">
-            </div>
             <h2 class="reviews__title">Guest Reviews</h2>
             <span class="reviews__quotes">“</span>
             <div class="reviews__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</div>
@@ -237,7 +243,7 @@
 </section>
 
 <!-- Reservation -->
-<section class="section">
+<section class="section" id="reservation">
     <div class="container">
         <div class="reservation">
             <div class="reservation__images">
@@ -245,11 +251,12 @@
                 <img class="reservation__img" src="images/reservation/2.jpg" alt="" >
             </div>
             <div class="reservation__content">
-                <h2 class="reservation__title">Just the right food</h2>
-                <p class="reservation__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.</p>
-                <p class="reservation__text reservation__text--last">
-                Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
-
+                <div class="reservation__content__description">
+                    <h2 class="reservation__title">Just the right food</h2>
+                    <p class="reservation__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.</p>
+                    <p class="reservation__text reservation__text--last">
+                    Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
+                </div> <!-- /.reservation__content__inner -->
                 <form class="reservation__form" action="" method="post">
                     <div class="reservation__form__item">
                         <label class="reservation__label" for="u-name">Name</label>
@@ -281,9 +288,7 @@
                             <option value="20">
                         </datalist>
                         <img class="reservation__arrow-icon" src="images/reservation/icon-arrow.png">
-
                     </div>
-
                     <button class="reservation__btn" type="submit">Book now!</button>
                 </form>
             </div> <!-- /.reservation__content -->
@@ -296,45 +301,52 @@
     <div class="container">
         <div class="footer__inner">
             <div class="footer__card">
-                <h3 class="footer__title">About Us</h3>
-                <p class="footer__text">
-                    Lambda's new and expanded Chelsea location represents a truly authentic <b>Greek</b> patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.<br>
-                    Lamda the best restaurant in town
-                </p>
-            </div>
-            <div class="footer__card">
-                <h3 class="footer__title">Opening Hours</h3>
-                <div class="footer__text">
-                    <div class="footer__text__line">
-                        <span class="footer__text--bold">Mon-Thu:</span><span class="footer__text"> 7:00am-8:00pm</span>
-                    </div>
-                    <div>
-                        <span class="footer__text--bold">Fri-Sun:</span><span class="footer__text">7:00am-10:00pm</span>
-                    </div>
-                </div>
-                <div class="footer__icons">
-                    <a href="#"><i class="footer__link fab fa-cc-amex"></i></a>
-                    <a href="#"><i class="footer__link fab fa-cc-paypal"></i></a>
-                    <a href="#"><i class="footer__link fab fa-cc-visa"></i></a>
-                    <a href="#"><i class="footer__link fab fa-cc-discover"></i></a>
+                <h3 class="footer__card__title" data-num="1">About Us</h3>
+                <div class="footer__card__content" data-num="1">
+                    <p class="footer__text">
+                        Lambda's new and expanded Chelsea location represents a truly authentic <b>Greek</b> patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.<br>
+                        Lamda the best restaurant in town
+                    </p>
                 </div>
             </div>
             <div class="footer__card">
-                <h3 class="footer__title">Our Location</h3>
-                <address class="footer__address">
-                    <p>19th Paradise Street Sitia</p>
-                    <p>128 Meserole Avenue</p>
-                </address>
-                <div class="footer__icons">
-                    <a href="https://www.facebook.com/" target="_blank"><i class="footer__link fab fa-facebook-f"></i></a>
-                    <a href="https://www.youtube.com/" target="_blank"><i class="footer__link fab fa-youtube"></i></a>
-                    <a href="https://twitter.com/?lang=ru" target="_blank"><i class="footer__link fab fa-twitter"></i></a>
-                    <a href="#"><i class="footer__link fas fa-poll"></i></a>
+                <h3 class="footer__card__title" data-num="2">Opening Hours</h3>
+                <div class="footer__card__content" data-num="2">
+                    <div class="footer__text">
+                        <div class="footer__text__line">
+                            <span class="footer__text--bold">Mon-Thu:</span><span class="footer__text"> 7:00am-8:00pm</span>
+                        </div>
+                        <div>
+                            <span class="footer__text--bold">Fri-Sun:</span><span class="footer__text">7:00am-10:00pm</span>
+                        </div>
+                    </div>
+                    <div class="footer__icons">
+                        <a href="#"><i class="footer__link fab fa-cc-amex"></i></a>
+                        <a href="#"><i class="footer__link fab fa-cc-paypal"></i></a>
+                        <a href="#"><i class="footer__link fab fa-cc-visa"></i></a>
+                        <a href="#"><i class="footer__link fab fa-cc-discover"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__card">
+                <h3 class="footer__card__title" data-num="3">Our Location</h3>
+                <div class="footer__card__content" data-num="3">
+                    <address class="footer__address">
+                        <p>19th Paradise Street Sitia</p>
+                        <p>128 Meserole Avenue</p>
+                    </address>
+                    <div class="footer__icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="footer__link fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="footer__link fab fa-youtube"></i></a>
+                        <a href="https://twitter.com/?lang=ru" target="_blank"><i class="footer__link fab fa-twitter"></i></a>
+                        <a href="#"><i class="footer__link fas fa-poll"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 
+<script src="app.js"></script>
 </body>
 </html>
