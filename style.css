@@ -25,7 +25,6 @@
     }
 */
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -1359,9 +1358,6 @@ input::-webkit-inner-spin-button {
 .footer__link:hover{
     transform: scale(1.4);
 }
-
-/* Media */
-/* ================================== */
 
 
 
